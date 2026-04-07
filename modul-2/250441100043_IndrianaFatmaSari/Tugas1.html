@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Care Najmina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffe4ec, #fff);
+      color: #444;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #ff4f81;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #666;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4f81;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 50px 10%;
+      gap: 30px;
+    }
+
+    .hero-text h2 {
+      font-size: 40px;
+      color: #ff4f81;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: #ff4f81;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #e04372;
+    }
+
+    .hero-img {
+      position: relative;
+    }
+
+    .hero-img img {
+      width: 100%;
+      border-radius: 20px;
+      transform: rotate(-3deg);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .blob {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: #ffd1dc;
+      border-radius: 50%;
+      top: -30px;
+      left: -30px;
+      z-index: -1;
+      filter: blur(40px);
+    }
+
+    .features {
+      padding: 60px 10%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ff4f81;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-img img {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Beauty Care Najmina</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Produk</a>
+    <a href="#">Review</a>
+    <a href="#">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Brightening Day Cream</h2>
+    <p>UV protection, pemutih, anti-kerutan-krim dasar nutrisi total dengan fungsi tiga ganda dan kandungan utama Flowerburst Complex + Panthenol/Ekstra Tumbuhan.</p>
+    <a href="#" class="btn">Beli Sekarang</a>
+  </div>
+
+  <div class="hero-img">
+    <div class="blob"></div>
+    <img src="GAMBAR/najmina.jpg">
+  </div>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3>Hydrating</h3>
+    <p>Plumpy, seger, kenyal, deep hydration, mengikat air, menyerap cepat, hidrasi mendalam.</p>
+  </div>
+
+  <div class="card">
+    <h3>Brightening</h3>
+    <p>Radiant, cerah merata, glowing, samarkan noda, bebas kusam, tone-up.</p>
+  </div>
+
+  <div class="card">
+    <h3>Moisturize</h3>
+    <p>Mengunci kelembapan, barrier protection, melembutkan, menghaluskan, proteksi maksimal, menutrisi.</p>
+  </div>
+
+  <div class="card">
+    <h3>SPF36 PA ++</h3>
+    <p>Perlindungan UV, anti-sunbrun, daily shield, bebas lengket, proteksi ganda, UV protection.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Beauty Care Najmina Untuk Cantik Sehatmu
+</footer>
+
+</body>
+</html>
