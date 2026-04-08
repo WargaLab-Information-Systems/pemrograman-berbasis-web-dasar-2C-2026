@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowfx - Skincare Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      color: #ff6b81;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 36px;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .hero-text button {
+      padding: 12px 25px;
+      border: none;
+      background: #ff6b81;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .hero img {
+      width: 300px;
+    }
+
+    .features {
+      padding: 50px 10%;
+      text-align: center;
+    }
+
+    .features h3 {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .feature-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .feature-item {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      margin: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    .feature-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .feature-item h4 {
+      margin-bottom: 10px;
+      color: #ff6b81;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 50px 10%;
+      background: #ff6b81;
+      color: white;
+    }
+
+    .cta button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      background: white;
+      color: #ff6b81;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Glowfx</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#produk">Produk</a>
+      <a href="#manfaat">Manfaat</a>
+      <a href="#beli">Beli</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="produk">
+    <div class="hero-text">
+      <h2>Kulit Sehat & Cerah Alami</h2>
+      <p>Glowfx adalah skincare premium yang membantu merawat kulit agar tetap sehat, lembap, dan bercahaya setiap hari.</p>
+      <button>Beli Sekarang</button>
+    </div>
+    <img src="Serum Glow fx.jpeg" alt="Produk Skincare">
+  </section>
+
+  <section class="features" id="manfaat">
+    <h3>Manfaat Produk</h3>
+    <div class="feature-list">
+      <div class="feature-item">
+        <img src="Serum.jpeg" alt="Natural Ingredients" >
+        <h4>Glow Booster Formula</h4>
+        <p>Serum ini mengandung kombinasi aktif brightening tinggi, seperti 8% Niacinamide, 3% Alpha Arbutin, dan 2% Tranexamic Acid yang bekerja sinergis memudarkan noda hitam dan mencerahkan kulit kusam secara efektif.</p>
+      </div>
+      <div class="feature-item">
+        <img src="Serum wajah.jpeg" alt="Dermatology Tested" >
+        <h4>Hasil Cepat 7 Hari</h4>
+        <p>Dilengkapi dengan Rainbow Algae dan Genowhite sebagai Melanobreaker, serum ini membantu meratakan warna kulit dan menyamarkan noda bekas jerawat (PIE & PIH) hanya dalam 7 hari.</p>
+      </div>
+      <div class="feature-item">
+        <img src="Serum Glow bomb.jpeg" alt="Fast Results" >
+        <h4>Brightening + Hydration</h4>
+        <p>Diperkaya 11 jenis Hyaluronic Acid dan PGA yang menjaga kelembapan, membuat kulit lebih kenyal, serta membantu menjaga skin barrier sehingga minim iritasi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="beli">
+    <h2>Dapatkan Kulit Impianmu Sekarang!</h2>
+    <button>Pesan Sekarang</button>
+  </section>
+
+  <footer>
+    <p>© 2026 Glowfx. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
