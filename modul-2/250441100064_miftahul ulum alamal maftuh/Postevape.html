@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSTER VAPE</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0a0a0a;
+      }
+      nav {
+        background-color: #000000;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: #35bbe8;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: rgb(125, 123, 123);
+      }
+      .judul {
+        margin: 0;
+        color: #edf0ee;
+        font-size: 3em;
+        text-shadow: 0 0 10px #00f7ff;
+        border: 3px solid #3fcece;
+        padding: 10px 20px;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 80px;
+      }
+      .text {
+        color: white;
+        width: 500px;
+      }
+      .text h3 {
+        font-size: 3em;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px #35bbe8;
+      }
+      .text p {
+        font-size: 1.2em;
+        color: #cccccc;
+      }
+      .content img {
+        width: 400px;
+        height: auto;
+        filter: drop-shadow(0 0 25px #35bbe8);
+        animation: naikTurun 2s infinite;
+      }
+      @keyframes naikTurun {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .fitur {
+        padding: 0px 20px 20px;
+        text-align: center;
+        color: white;
+      }
+      .fitur h3 {
+        font-size: 3em;
+        text-shadow:
+          0 0 10px #fb7d07,
+          0 0 20px #fb7d07;
+      }
+      .fitur-box {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px 50px 80px;
+      }
+      .box {
+        background-color: #111111;
+        color: rgb(246, 247, 246);
+        padding: 15px;
+        width: 400px;
+        text-align: center;
+        border-radius: 30px;
+        border: 1px solid #00f7ff;
+        box-shadow: 0 0 15px #00f7ff33;
+        transition: 0.3s;
+      }
+      .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 25px #00f7ff;
+      }
+    .catalog h1 {
+        margin: 0;
+        text-align: center;
+        color: #edf0ee;
+        font-size: 3em;
+        text-shadow: 0 0 10px #00f7ff;
+        padding: 10px 20px;
+      }
+      .produk {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: #60d8f0;
+        border: 1px solid #ddd;
+        padding: 15px;
+        width: 200px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      .card img {
+        width: 200px;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#fitur">Fitur</a>
+      <a href="#catalog">Catalog</a>
+    </nav>
+    <h1 class="judul">OXVA VAPE</h1>
+    <div id="home" class="content">
+      <div class="text">
+        <h3>OXVA XLIM GO 2</h3>
+        <p>
+          Dirancang untuk pemula, XLIM GO 2 adalah pod sempurna untuk penggunaan
+          sehari-hari.Dengan baterai 1500mAh, pod 3ml (2ml untuk TPD), dan
+          teknologi Unitech 2.0, Anda akan menikmati rasa yang lembut dan kaya
+          di setiap hisapan. Tanpa tombol, tanpa pengaturan — cukup isi dan
+          nikmati.
+        </p>
+        <a href="https://www.oxva.id/products/oxva-xlim-go-2-pod-system-kit-30w"
+          >Beli Sekarang</a
+        >
+      </div>
+      <img src="Xlim_go_2_Royal_Series.webp" alt="Vape Device" />
+    </div>
+    <div id="fitur" class="fitur">
+      <h3>Dengan Fitur Unggulan</h3>
+    </div>
+    <div class="fitur-box">
+      <div class="box">
+        <h4>Rasa Stabil</h4>
+        <p>Memberikan rasa yang konsisten di setiap hisapan.</p>
+      </div>
+      <div class="box">
+        <h4>Desain Elegan</h4>
+        <p>Tampilan modern dan nyaman digenggam.</p>
+      </div>
+      <div class="box">
+        <h4>Baterai Tahan Lama</h4>
+        <p>Daya tahan kuat untuk penggunaan seharian.</p>
+      </div>
+    </div>
+
+    <div class="catalog" id="catalog">
+        <h1>
+             Produk lainnya
+        </h1>
+      <div class="produk">
+        <div class="card">
+          <img src="mint-green-01-oxva-xlim-3ultra-best-overall-pod-system-2025.webp" style="border-radius: 10px" />
+          <h3>XLIM 3 Ultra</h3>
+          <a href="https://www.oxva.id/products/oxva-xlim-3-ultra-pod-system-kit-30w" target="_blank">Beli Sekarang</a>
+        </div>
+        <div class="card">
+          <img src="space-gray-oxva-nexlim-go-best-dual-mesh-pod-2025.png-3.webp" style="border-radius: 10px"/>
+          <h3>NEXLIM GO</h3>
+          <a href="https://www.oxva.id/products/oxva-nexlim-go-pod-system-kit-40w" target="_blank">Beli Sekarang</a>
+        </div>
+
+        <div class="card">
+          <img src="20250829141224_5_200.webp" style="border-radius: 10px"
+ />
+          <h3>ONEO</h3>
+          <a href="https://www.oxva.id/products/kit-vape-pod-oxva-oneo" target="_blank">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p style="color: #00f7ff" align="center">&copy; 2026 OXVA</p>
+    </footer>
+  </body>
+</html>
