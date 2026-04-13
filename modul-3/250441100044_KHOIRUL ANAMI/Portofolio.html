@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Khoirul Anami</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 font-sans text-white">
+
+
+<nav class="fixed w-full bg-blue-900 p-4 flex justify-between items-center z-50">
+    <h1 class="text-xl font-bold text-gray-200">Portofolio</h1>
+
+
+    <div class="space-x-6 hidden md:block">
+        <a href="#home" class="hover:text-gray-300 transition">Home</a>
+        <a href="#about" class="hover:text-gray-300 transition">About</a>
+        <a href="#skills" class="hover:text-gray-300 transition">Skills</a>
+        <a href="#projects" class="hover:text-gray-300 transition">Projects</a>
+        <a href="#contact" class="hover:text-gray-300 transition">Contact</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden text-2xl">
+        ☰
+    </button>
+</nav>
+
+
+<div id="menu" class="hidden fixed top-16 left-0 w-full bg-blue-800 text-center py-4 space-y-4 md:hidden">
+    <a href="#home" class="block">Home</a>
+    <a href="#about" class="block">About</a>
+    <a href="#skills" class="block">Skills</a>
+    <a href="#projects" class="block">Projects</a>
+    <a href="#contact" class="block">Contact</a>
+</div>
+
+
+<section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
+
+    <img src="foto anam.jpeg" 
+        class="w-32 md:w-40 h-32 md:h-40 rounded-xl mb-6 border-4 border-blue-500 shadow-lg">
+
+    <h2 class="text-3xl md:text-5xl font-bold mb-4 text-blue-400">
+        Halo, Saya Khoirul Anami
+    </h2>
+
+    <p class="text-gray-300 mb-6 text-sm md:text-base">
+        Mahasiswa Sistem Informasi yang tertarik di Web Development
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-4">
+        <a href="#projects" class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+            Lihat Proyek
+        </a>
+        <a href="#contact" class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">
+            Kontak
+        </a>
+    </div>
+
+</section>
+
+
+<section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-6 text-blue-400">Tentang Saya</h3>
+    <p class="text-gray-300 leading-relaxed">
+        Saya adalah mahasiswa Sistem Informasi yang memiliki minat dalam pengembangan website 
+        dan database. Saya terbiasa menggunakan HTML, CSS, dan MySQL untuk membuat aplikasi sederhana.
+        Saat ini saya sedang terus belajar untuk menjadi web developer yang lebih baik.
+    </p>
+</section>
+
+
+<section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-10 text-center text-blue-400">Skills</h3>
+
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition shadow-lg">
+            <h4 class="font-bold mb-2 text-blue-400">HTML</h4>
+            <p class="text-sm text-gray-300">Membuat struktur website</p>
+        </div>
+
+        <div class="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition shadow-lg">
+            <h4 class="font-bold mb-2 text-blue-400">CSS</h4>
+            <p class="text-sm text-gray-300">Mendesain tampilan website</p>
+        </div>
+
+        <div class="bg-white/10 p-6 rounded-xl hover:bg-white/20 transition shadow-lg">
+            <h4 class="font-bold mb-2 text-blue-400">MySQL</h4>
+            <p class="text-sm text-gray-300">Mengelola database sederhana</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-10 text-center text-blue-400">Projects</h3>
+
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white/10 p-6 rounded-xl hover:scale-105 transition shadow-lg">
+            <h4 class="font-bold mb-2 text-blue-400">Sistem Informasi Klinik</h4>
+            <p class="text-gray-300 text-sm"> 
+                Aplikasi sederhana untuk mengelola data pasien dan dokter menggunakan MySQL.
+            </p>
+        </div>
+
+        <div class="bg-white/10 p-6 rounded-xl hover:scale-105 transition shadow-lg">
+            <h4 class="font-bold mb-2 text-blue-400">Landing Page Produk</h4>
+            <p class="text-gray-300 text-sm"> 
+                Website sederhana menggunakan HTML dan CSS.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-20 text-center text-gray-300">
+    <h3 class="text-3xl font-bold mb-4 text-blue-400">Kontak</h3>
+    <p>Email: anamikhoirul123@gmail.com</p>
+    <p>WA: 08112345678</p>
+</section>
+
+<footer class="bg-black/50 text-center p-4">
+    <p class="text-blue-400">© 2026 Maz_Anam</p>
+</footer>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+
+<nav class="fixed w-full bg-blue-600 text-white p-4 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">TechNova</h1>
+
+
+        <div class="space-x-4 hidden md:block">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#services" class="hover:underline">Services</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+        </div>
+
+        
+        <button id="menu-btn" class="md:hidden text-2xl">
+            ☰
+        </button>
+    </div>
+</nav>
+
+
+<div id="menu" class="hidden fixed top-16 left-0 w-full bg-blue-500 text-center py-4 space-y-4 md:hidden">
+    <a href="#" class="block">Home</a>
+    <a href="#about" class="block">About</a>
+    <a href="#services" class="block">Services</a>
+    <a href="#contact" class="block">Contact</a>
+</div>
+
+
+<section class="bg-blue-500 text-white py-20 pt-32">
+    <div class="container mx-auto grid md:grid-cols-2 items-center px-6 gap-8">
+        
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Solusi Digital Masa Depan
+            </h2>
+            <p class="mb-6 text-sm md:text-base">
+                Kami membantu bisnis Anda berkembang dengan teknologi modern
+            </p>
+            <button class="bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+                Pelajari Lebih Lanjut
+            </button>
+        </div>
+
+        <div>
+            <img src="technova.webp" alt="Perusahaan" 
+                class="w-full max-w-md mx-auto rounded-lg shadow-lg">
+        </div>
+
+    </div>
+</section>
+
+
+<section id="about" class="py-16 container mx-auto px-6">
+    <h2 class="text-2xl font-bold text-center mb-6">Tentang Kami</h2>
+    <p class="text-center max-w-2xl mx-auto">
+        TechNova adalah perusahaan teknologi yang bergerak di bidang pengembangan website, 
+        aplikasi, dan solusi digital lainnya.
+    </p>
+</section>
+
+
+<section id="services" class="bg-gray-200 py-16">
+    <h2 class="text-2xl font-bold text-center mb-10">Layanan Kami</h2>
+
+    <div class="container mx-auto grid md:grid-cols-3 gap-6 px-6">
+        
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition">
+            <h3 class="font-bold text-lg mb-2">Web Development</h3>
+            <p>Membuat website profesional dan responsif.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition">
+            <h3 class="font-bold text-lg mb-2">Mobile App</h3>
+            <p>Pengembangan aplikasi Android & iOS.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition">
+            <h3 class="font-bold text-lg mb-2">UI/UX Design</h3>
+            <p>Desain tampilan yang menarik dan user-friendly.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact" class="py-16 container mx-auto px-6">
+    <h2 class="text-2xl font-bold text-center mb-6">Kontak Kami</h2>
+
+    <form class="max-w-md mx-auto bg-white p-6 rounded-lg shadow">
+        <div class="mb-4">
+            <label class="block mb-1">Nama</label>
+            <input type="text" class="w-full border p-2 rounded" placeholder="Nama">
+        </div>
+
+        <div class="mb-4">
+            <label class="block mb-1">Email</label>
+            <input type="text" class="w-full border p-2 rounded" placeholder="Email">
+        </div>
+
+        <div class="mb-4">
+            <label class="block mb-1">Pesan</label>
+            <textarea class="w-full border p-2 rounded" placeholder="Pesan"></textarea>
+        </div>
+
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
+            Kirim
+        </button>
+    </form>
+</section>
+
+
+<footer class="bg-blue-600 text-white text-center p-4">
+    <p>© 2026 TechNova. All rights reserved.</p>
+</footer>
+
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>
