@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Kota Pati</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+
+ 
+  <nav class="bg-pink-800 text-white px-6 py-4 flex justify-between items-center shadow-lg sticky top-0 z-50">
+    <h1 class="text-xl font-bold">Pati Bumi Mina Tani</h1>
+    <ul class="flex gap-6 font-medium">
+      <li><a href="#home" class="hover:text-pink-200">Home</a></li>
+      <li><a href="#profil" class="hover:text-pink-200">Profil</a></li>
+      <li><a href="#potensi" class="hover:text-pink-200">Potensi</a></li>
+      <li><a href="#kontak" class="hover:text-pink-200">Kontak</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="home" class="bg-gradient-to-r from-pink-500 to-pink-700 text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Selamat Datang Di Kabupaten Pati</h2>
+    <p class="text-lg mb-6">Kota yang asri, maju, dan sejahtera</p>
+    <a href="#profil" class="bg-white text-pink-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Jelajahi</a>
+  </section>
+
+
+  <section id="profil" class="p-10 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Profil Kota</h2>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="leading-relaxed">
+         Kabupaten Pati adalah sebuah kabupaten yang terletak di Provinsi Jawa Tengah, Indonesia. Pati dikenal sebagai salah satu daerah yang kaya akan sejarah, budaya, dan potensi alam.
+        </p>
+      </div>
+      <div>
+        <img src="gambar/bumi-mina-tani.webp" class="rounded-2xl shadow-lg hover:scale-105 transition" />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="potensi" class="bg-white py-12">
+    <h2 class="text-3xl font-bold mb-10 text-center">Potensi Kota</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+      <div class="bg-gray-100 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">🌾🐟Pertanian & perikanan</h3>
+        <p>Kekayaan utamanya menyatu dalam satu garis lurus: sektor pertanian (seperti padi, kacang, dan jeruk pamelo) didukung oleh sektor perikanan yang melimpah karena wilayahnya berbatasan langsung dengan Laut Jawa, yang menjadikan daerah Juwana sebagai sentra utama pengolahan ikan, terutama bandeng.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">🏞️ Wisata</h3>
+        <p>Pati memiliki berbagai destinasi wisata alam seperti air terjun, perbukitan, dan pantai yang menarik untuk dikunjungi.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2">🥐 Kuliner</h3>
+        <p>Kuliner khas seperti Soto Kemiri, Nasi Gandul, dan aneka jajanan tradisional menjadi daya tarik tersendiri bagi wisatawan.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="kontak" class="p-10 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Informasi & Saran</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="space-y-4">
+        <p style="font-weight: 600;"> 📍 Alamat: Pati, Jawa Tengah</p>
+        <p style="font-weight: 600;"> 📧 Email: info@pati.go.id</p>
+        <p style="font-weight: 600;"> 📞 Telepon: 08976535608</p>
+        <div class="bg-pink-50 p-4 rounded-lg">
+         
+        </div>
+      </div>
+
+    
+      <form class="bg-white p-6 rounded-2xl shadow space-y-4">
+        <h3 class="text-xl font-semibold">💬 Berikan Saran</h3>
+        <input type="text" placeholder="Nama Anda" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" />
+        <textarea placeholder="Tulis saran atau pendapat Anda tentang Kota Pati..." rows="4" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+        <button type="button" class="w-full bg-pink-800 text-white py-3 rounded-lg hover:bg-pink-700 transition">Kirim Saran</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="bg-pink-800 text-white text-center py-4 mt-10">
+    <p>© 2026 Pati Bumi Mina Tani.</p>
+  </footer>
+
+</body>
+</html>
