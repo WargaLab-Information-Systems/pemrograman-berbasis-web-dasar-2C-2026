@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Danang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        p {
+            color: #374151;
+        }
+        .dark p {
+            color: #d1d5db;
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-black text-gray-800 dark:text-white transition duration-300">
+
+    <nav class="sticky top-0 z-50 flex justify-between items-center p-4 bg-white dark:bg-gray-900 shadow">
+        <h1 class="text-blue-600 font-bold">Portofolio</h1>
+
+        
+        <div class="hidden md:flex gap-4 text-sm">
+            <a href="#home" class="hover:text-blue-600">Home</a>
+            <a href="#about" class="hover:text-blue-600">Tentang</a>
+            <a href="#project" class="hover:text-blue-600">Project</a>
+            <a href="#contact" class="hover:text-blue-600">Kontak</a>
+        </div>
+
+        
+        <label class="flex items-center cursor-pointer">
+            <div class="relative">
+                <input type="checkbox" id="themeToggle" class="sr-only">
+
+                <div class="w-14 h-7 bg-gray-300 dark:bg-gray-700 rounded-full flex items-center px-1">
+
+                    
+                    <span class="text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                        </svg>
+                    </span>
+
+                    <div class="flex-1"></div>
+
+                    
+                    <span class="text-black dark:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                        </svg>
+                    </span>
+                </div>
+
+                <div id="toggleCircle"
+                    class="absolute top-1 left-1 w-5 h-5 bg-white rounded-full transition duration-300">
+                </div>
+            </div>
+        </label>
+    </nav>
+
+    
+    <section id="home" class="text-center py-20 px-6">
+        <h2 class="text-3xl font-bold mb-4">
+            Halo, Saya <span class="text-blue-600">Danang Wahyu </span>Asmudi
+        </h2>
+        <p>Mahasiswa Sistem Informasi</p>
+    </section>
+
+    
+    <section id="about" class="py-16 px-6 text-center">
+        <h3 class="text-xl font-bold text-blue-600 mb-4">Tentang Saya</h3>
+
+        <p class="mb-6">
+            Saya sekarang adalah seorang mahasiswa sistem informasi di Universitas Trunodjoyo Madura
+            yang saat ini masih semester 2
+        </p>
+
+        
+        <h4 class="font-bold mb-3">Skill</h4>
+        <div class="flex justify-center gap-3 flex-wrap">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded">HTML</span>
+            <span class="bg-blue-600 text-white px-3 py-1 rounded">Python</span>
+            <span class="bg-blue-600 text-white px-3 py-1 rounded">CSS</span>
+        </div>
+    </section>
+
+    
+    <section id="project" class="py-16 px-6 bg-gray-100 dark:bg-gray-900">
+        <h3 class="text-xl font-bold text-blue-600 text-center mb-6">Project</h3>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            
+            <div class="bg-white dark:bg-gray-800 p-4 rounded shadow text-center">
+                <h4 class="font-bold mb-2">Website Portfolio</h4>
+                <p class="mb-4">Website sederhana menggunakan Tailwind.</p>
+                <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded">Lihat</a>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-4 rounded shadow text-center">
+                <h4 class="font-bold mb-2">Sistem Python</h4>
+                <p class="mb-4">Project Akhir Sistem Donasi Online</p>
+                <a href="https://github.com/ZHou-87/ProjectAkhir_13_DonasiOnline" target="_blank" class="bg-blue-600 text-white px-3 py-1 rounded">Lihat</a>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-4 rounded shadow text-center">
+                <h4 class="font-bold mb-2">Tampilan Pembelian Produk</h4>
+                <p class="mb-4">Membuat tampilan Pembelian Sederhana</p>
+                <a href="https://github.com/ZHou-87/pemrograman-berbasis-web-dasar-2C-2026/tree/main/modul-2/250441100033_DANANG%20WAHYU%20ASMUDI" class="bg-blue-600 text-white px-3 py-1 rounded">Lihat</a>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section id="contact" class="py-16 text-center">
+        <h3 class="text-xl font-bold text-blue-600 mb-4">Kontak</h3>
+        <p>Email: danangstudy@email.com</p>
+        <p>No: 085859841601</p>
+    </section>
+
+    
+    <footer class="text-center py-4 text-gray-500">
+        © 2026 Danang
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("themeToggle");
+        const circle = document.getElementById("toggleCircle");
+
+        toggle.addEventListener("change", function () {
+            document.documentElement.classList.toggle("dark");
+
+            if (this.checked) {
+                circle.classList.add("translate-x-7");
+            } else {
+                circle.classList.remove("translate-x-7");
+            }
+        });
+    </script>
+
+</body>
+</html>
