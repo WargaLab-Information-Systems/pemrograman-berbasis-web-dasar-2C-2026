@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Desa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .hero {
+      background: url('gambar/sven-V7WkmXntA8M-unsplash.jpg') no-repeat center;
+      background-size: cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+    .overlay {
+      background: rgba(0,0,0,0.5);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container">
+    <a class="navbar-brand" href="#">Desa Maju</a>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="overlay">
+    <div class="container text-center">
+      <h1 class="display-4">Selamat Datang di Desa Maju</h1>
+      <p class="lead">Desa yang asri, aman, dan sejahtera</p>
+      <a href="#profil" class="btn btn-light">Lihat Profil</a>
+    </div>
+  </div>
+</section>
+
+<!-- Profil -->
+<section id="profil" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Profil Desa</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="gambar/dikaseva-8o4W9LZv6eo-unsplash.jpg" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <p>
+          Desa Maju merupakan desa yang terletak di daerah pedesaan dengan
+          pemandangan alam yang indah dan masyarakat yang ramah.
+        </p>
+        <p>
+          Mayoritas penduduk bekerja sebagai petani dan pelaku UMKM.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Berita -->
+<section id="berita" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Berita Desa</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="gambar/prahlad-inala-BJlJG23ciXI-unsplash.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Panen Raya</h5>
+            <p>Desa Maju mengadakan panen raya tahun ini.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="gambar/campaign-creators-gMsnXqILjp4-unsplash.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Rapat Warga</h5>
+            <p>Rapat membahas pembangunan desa.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="gambar/hanny-naibaho-aWXVxy8BSzc-unsplash.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Festival Desa</h5>
+            <p>Acara budaya dan hiburan masyarakat.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section id="galeri" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Galeri</h2>
+    <div class="row">
+
+      <div class="col-md-3 mb-3">
+        <img src="gambar/adrian-pranata-AfRUQoGB12g-unsplash.jpg" class="img-fluid rounded">
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <img src="gambar/antoine-pluss-MsKv6HCQ0F0-unsplash.jpg" class="img-fluid rounded">
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <img src="gambar/pukpik-aB46yUmsMp0-unsplash.jpg" class="img-fluid rounded">
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <img src="gambar/kees-streefkerk-Adl90-aXYwA-unsplash.jpg" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Kontak</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong>Alamat:</strong> Desa Maju, Indonesia</p>
+        <p><strong>Email:</strong> desa@maju.com</p>
+        <p><strong>Telepon:</strong> 08123456789</p>
+      </div>
+
+      <div class="col-md-6">
+        <form>
+          <input type="text" class="form-control mb-2" placeholder="Nama">
+          <input type="email" class="form-control mb-2" placeholder="Email">
+          <textarea class="form-control mb-2" rows="3" placeholder="Pesan"></textarea>
+          <button class="btn btn-success">Kirim</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-success text-white text-center py-3">
+  <p>&copy; 2026 Desa Maju | All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
