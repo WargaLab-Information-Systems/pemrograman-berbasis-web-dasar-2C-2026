@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Kota</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-gray-100 font-sans text-gray-800">
+
+
+  <nav class="fixed w-full bg-blue-600/90 backdrop-blur text-white shadow z-50">
+    <div class="flex justify-between items-center px-4 sm:px-6 py-4">
+      <h1 class="font-bold text-lg">Pamekasan</h1>
+
+  
+      <div class="hidden md:flex gap-6">
+        <a href="#" class="hover:text-yellow-300">Beranda</a>
+        <a href="#profil" class="hover:text-yellow-300">Profil</a>
+        <a href="#potensi" class="hover:text-yellow-300">Potensi</a>
+        <a href="#kontak" class="hover:text-yellow-300">Kontak</a>
+      </div>
+
+
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+
+
+    <div id="mobileMenu" class="hidden flex flex-col bg-blue-600 px-4 pb-4 md:hidden">
+      <a href="#" class="py-2">Beranda</a>
+      <a href="#profil" class="py-2">Profil</a>
+      <a href="#potensi" class="py-2">Potensi</a>
+      <a href="#kontak" class="py-2">Kontak</a>
+    </div>
+  </nav>
+
+
+  <section class="bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center px-4 sm:px-6 pt-28 pb-16">
+    <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-3">Kota Pamekasan</h2>
+    <p class="text-sm sm:text-base md:text-xl opacity-90">Gerbang Salam, Madura, Jawa Timur</p>
+  </section>
+
+
+  <section id="profil" class="px-4 sm:px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center max-w-6xl mx-auto">
+  
+    <img src="pamekasan.jpg" 
+         class="rounded-2xl shadow-lg w-full object-cover">
+
+    <div>
+      <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-blue-600">Profil Kota</h3>
+
+      <p class="text-gray-700 text-sm sm:text-base text-justify leading-relaxed">
+        Pamekasan merupakan salah satu kabupaten di Provinsi Jawa Timur yang terletak di Pulau Madura.
+        Daerah ini dikenal dengan julukan “Gerbang Salam”, yang mencerminkan kehidupan masyarakatnya yang religius dan menjunjung tinggi nilai-nilai keagamaan.
+        Pamekasan memiliki berbagai potensi di bidang budaya, ekonomi, dan pariwisata.
+        Tradisi khas seperti karapan sapi menjadi daya tarik budaya yang terkenal, sementara produk lokal seperti batik Madura mendukung perekonomian masyarakat.
+        Pamekasan memiliki destinasi menarik seperti Pantai Jumiang yang menawarkan keindahan alam dan suasana yang tenang.
+      </p>
+    </div>
+
+  </section>
+
+
+  <section id="potensi" class="px-4 sm:px-6 py-16">
+    <h3 class="text-2xl sm:text-3xl font-bold text-center text-blue-600 mb-10">Potensi Daerah</h3>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto text-center">
+
+      <div class="bg-white p-5 rounded-2xl shadow hover:shadow-xl transition">
+        <img src="pantai-jhumiang-pamekasan.jpeg"
+             class="rounded-lg mb-3 w-full aspect-video object-cover">
+        <h4 class="font-bold mb-2">Wisata</h4>
+        <p class="text-gray-600 text-sm sm:text-base">Pantai Jumiang dan wisata alam yang indah.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl shadow hover:shadow-xl transition">
+        <img src="batik-pamekasan.jpeg"
+             class="rounded-lg mb-3 w-full aspect-video object-cover">
+        <h4 class="font-bold mb-2">UMKM</h4>
+        <p class="text-gray-600 text-sm sm:text-base">Batik Madura dan produk khas daerah.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl shadow hover:shadow-xl transition">
+        <img src="karapan-sapi.jpeg"
+             class="rounded-lg mb-3 w-full aspect-video object-cover">
+        <h4 class="font-bold mb-2">Budaya</h4>
+        <p class="text-gray-600 text-sm sm:text-base">Karapan sapi sebagai tradisi terkenal.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="kontak" class="px-4 sm:px-6 py-16 text-center">
+    <h3 class="text-2xl sm:text-3xl font-bold text-blue-600 mb-4">Kontak</h3>
+    <p class="text-gray-700 text-sm sm:text-base mb-2">Instagram: enjoypamekasan</p>
+    <p class="text-gray-700 text-sm sm:text-base">Email: enjoypamekasan@gmail.com</p>
+  </section>
+
+
+  <footer class="bg-blue-600 text-white text-center py-4 mt-10">
+    <p class="text-sm sm:text-base">© 2026 Kota Pamekasan</p>
+  </footer>
+
+  
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>

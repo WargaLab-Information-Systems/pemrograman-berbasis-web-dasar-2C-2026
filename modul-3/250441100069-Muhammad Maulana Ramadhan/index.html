@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Pribadi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gradient-to-br from-blue-50 to-gray-100 text-gray-800">
+
+
+  <nav class="fixed w-full bg-white/80 backdrop-blur shadow z-50">
+    <div class="flex justify-between items-center px-6 py-4">
+      <h1 class="text-xl font-bold text-blue-600">Portofolio</h1>
+
+
+      <ul class="hidden md:flex gap-6 text-gray-600 font-medium">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Project</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+
+
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+
+
+    <div id="mobileMenu" class="hidden flex flex-col bg-white px-6 pb-4 md:hidden">
+      <a href="#home" class="py-2">Home</a>
+      <a href="#about" class="py-2">About</a>
+      <a href="#skills" class="py-2">Skills</a>
+      <a href="#projects" class="py-2">Project</a>
+      <a href="#contact" class="py-2">Contact</a>
+    </div>
+  </nav>
+
+
+  <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-4 sm:px-6 pt-28 pb-16">
+    
+    <img src="foto-anang.jpeg" 
+         class="w-32 h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 rounded-full object-cover mb-6 md:mb-0 md:mr-10 shadow-lg">
+
+    <div>
+      <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-3">
+        MUHAMMAD MAULANA RAMADHAN
+      </h2>
+      <p class="text-gray-600 mb-6 text-sm sm:text-base md:text-lg">
+        Web Developer | Mahasiswa Universitas Trunojoyo Madura
+      </p>
+      <a href="#projects" 
+         class="bg-blue-600 text-white px-5 py-2 sm:px-6 sm:py-3 rounded-full shadow hover:bg-blue-700 transition">
+        Lihat Project
+      </a>
+    </div>
+
+  </section>
+
+
+  <section id="about" class="px-4 sm:px-6 py-16">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Tentang Saya</h2>
+    <p class="max-w-2xl mx-auto text-center text-gray-600 leading-relaxed text-sm sm:text-base">
+      Saya adalah mahasiswa Universitas Trunojoyo Madura, Fakultas Teknik, Prodi Sistem Informasi.
+      Saya memiliki minat di bidang teknologi. 
+      Saya mampu bekerja secara individu maupun tim serta memiliki semangat belajar yang tinggi.
+    </p>
+  </section>
+
+
+  <section id="skills" class="py-16 px-4 sm:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">Skills</h2>
+
+    <div class="flex justify-center gap-4 sm:gap-6 flex-wrap">
+      <div class="bg-white px-6 py-4 sm:px-10 sm:py-5 rounded-2xl shadow hover:shadow-xl transition">
+        Editing Video
+      </div>
+      <div class="bg-white px-6 py-4 sm:px-10 sm:py-5 rounded-2xl shadow hover:shadow-xl transition">
+        Editing Foto
+      </div>
+      <div class="bg-white px-6 py-4 sm:px-10 sm:py-5 rounded-2xl shadow hover:shadow-xl transition">
+        Desain Grafis
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="px-4 sm:px-6 py-16">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">Project</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
+
+      <div class="bg-white rounded-2xl shadow p-5 sm:p-6 hover:shadow-xl transition">
+        <h3 class="font-bold text-lg mb-2">Website HTML Sederhana</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Membuat website sederhana menggunakan HTML yang terdiri dari beberapa halaman seperti 
+          halaman Books, College, dan Curriculum Vitae. Website ini bertujuan untuk memahami 
+          struktur dasar HTML, navigasi antar halaman, dan pembuatan layout sederhana.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow p-5 sm:p-6 hover:shadow-xl transition">
+        <h3 class="font-bold text-lg mb-2">Website Landing Page</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Mengembangkan website informasi tentang Honda Supra X 125 yang berisi spesifikasi, 
+          keunggulan, serta modifikasi motor. Project ini dibuat untuk melatih kemampuan dalam 
+          menyusun konten dan tampilan website yang informatif dan menarik.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="contact" class="py-16 px-4 sm:px-6 text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Contact</h2>
+ 
+    <p class="text-gray-600 text-sm sm:text-base mb-2">Email: samuraigaming109@email.com</p>
+    <p class="text-gray-600 text-sm sm:text-base">Instagram: @nanngg_06</p>
+  </section>
+
+
+  <footer class="bg-blue-600 text-white text-center py-4 mt-10">
+    <p class="text-sm sm:text-base">© 2026 Muhammad Maulana Ramadhan (250441100069)</p>
+  </footer>
+
+
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
