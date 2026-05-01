@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Belajar JS - Checkpoint 3 (Event Listener)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      transition: all 0.3s;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    body.dark {
+      background-color: #222;
+      color: white;
+    }
+    body.dark button {
+      background-color: #444;
+      color: white;
+      border: 1px solid #666;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="judul">Belum diklik</h1>
+
+  <button id="tombolKlik">Klik buat ganti teks</button>
+  <button id="tombolCounter">Counter: 0</button>
+  <button id="tombolWarna">Warna Random</button>
+  <button id="tombolTema">🌓 Toggle Dark Mode</button>
+
+  <script>
+    // ========== PRAKTEK 1: Ganti teks saat klik ==========
+    let tombolKlik = document.getElementById("tombolKlik");
+    let judul = document.getElementById("judul");
+
+    tombolKlik.addEventListener("click", function() {
+        judul.textContent = "Kamu klik tombolnya!";
+    });
+
+    // ========== PRAKTEK 2: Counter ==========
+    let tombolCounter = document.getElementById("tombolCounter");
+    let hitungan = 0;  // variabel di LUAR function biar inget
+
+    tombolCounter.addEventListener("click", function() {
+        hitungan = hitungan + 1;
+        tombolCounter.textContent = "Counter: " + hitungan;
+    });
+
+    // ========== PRAKTEK 3: Warna random ==========
+    let tombolWarna = document.getElementById("tombolWarna");
+
+    tombolWarna.addEventListener("click", function() {
+        let warnaAcak = "#" + Math.floor(Math.random()*16777215).toString(16);
+        judul.style.color = warnaAcak;
+    });
+
+    // ========== DARK MODE ==========
+    let tombolTema = document.getElementById("tombolTema");
+
+    tombolTema.addEventListener("click", function() {
+        document.body.classList.toggle("dark");
+    });
+  </script>
+</body>
+</html>

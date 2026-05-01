@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <nav class="flex items-center justify-between px-10 py-4 w-full">
+      <div class="flex items-center gap-8">
+        <img src="UTS/Logo.png" alt="logo" class="w-10 h-10 object-contain" />
+        <h1 class="text-2xl font-bold text-purple-600">BzMe</h1>
+      </div>
+      <div class="hidden md:flex gap-8 text-lg font-medium text-purple-600">
+        <a href="#home" class="hover:text-orange-400 transition">Home</a>
+        <a href="#about" class="hover:text-orange-400 transition">About</a>
+        <a href="#services" class="hover:text-orange-400 transition">Services</a>
+        <a href="#contact" class="hover:text-orange-400 transition">Contact</a>
+        <a href="#blog" class="hover:text-orange-400 transition">Blog</a>
+      </div>
+      <div class="flex gap-4">
+        <button id="btnSignup" class="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded-xl shadow-md transition">
+          Sign Up</button>
+        <button id="tema" onclick="toggleDark()" class="bg-black hover:bg-white hover:text-black text-white px-4 py-2 rounded-xl shadow-md transition
+         dark:bg-white dark:hover:bg-black dark:hover:text-white dark:text-black">
+        🌙 Dark</button>
+      </div>
+    </nav>
+
+    <div
+      id="loginForm"
+      class="fixed inset-0 bg-black/50 hidden items-center justify-center flex">
+      <div class="bg-white dark:text-black p-8 rounded-xl w-[300px]">
+        <h2 class="text-xl font-bold mb-4 text-center dark:text-black">
+          Login
+        </h2>
+        <input type="text" id="loginNama" placeholder="Nama" class="w-full mb-3 p-2 border rounded"/>
+        <input type="email" id="loginEmail" placeholder="Email" class="w-full mb-3 p-2 border rounded"/>
+        <input type="password" id="loginPassword" placeholder="Password" class="w-full mb-3 p-2 border rounded"/>
+
+        <button
+          id="btnLogin"
+          class="w-full bg-orange-500 text-white py-2 rounded mb-2 dark:bg-black"
+        >
+          Login
+        </button>
+
+        <button id="closeLogin" class="w-full bg-gray-300 py-2 rounded">
+          Close
+        </button>
+
+        <p id="errorLogin" class="text-red-500 text-sm mt-2"></p>
+      </div>
+    </div>
+
+    <section
+      id="home"
+      class="flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-30"
+    >
+      <div class="max-w-xl space-y-6">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight dark:text-white">
+          We Create <br /><span class="text-purple-600">Solutions</span> For <br />
+          Your Business
+        </h1>
+        <p class="text-gray-600 dark:text-white text-lg">
+          We provide intelligent technology solutions to optimize efficiency and
+          accelerate the growth of your business operations.
+        </p>
+        <button
+          class="bg-orange-400 hover:bg-orange-500 text-white px-6 py-2 rounded-xl shadow-md transition"
+        >
+          Get Started
+        </button>
+      </div>
+      <div class="mt-10 md:mt-0">
+        <img
+          src="UTS/1.png"
+          alt="hero"
+          class="w-[400px] md:w-[500px] object-contain"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="py-16 px-6 md:px-16">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-5xl font-bold dark:text-white">
+          We Provide The Best
+          <span class="text-purple-600">Services</span>
+        </h2>
+        <p class="text-gray-500 mt-4 text-lg">
+          We deliver high-quality technology services specifically designed to
+          enhance your business productivity and scalability in a sustainable
+          way.
+        </p>
+      </div>
+      <div
+        id="services"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <div class="bg-white rounded-2xl p-6 shadow-md shadow-purple-500 dark:bg-gray-800">
+          <div
+            class="w-14 h-14 flex items-center justify-center bg-orange-300 rounded-full mb-4"
+          >
+            <img src="UTS/icon 1.png" alt="" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-black">Seo/Sem</h3>
+          <p class="text-gray-500 text-sm mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
+            faucibus.
+          </p>
+          <a
+            href="https://instiki.ac.id/2022/10/06/apa-itu-seo-sem-dan-smm-inilah-strategi-digital-marketing-masa-kini/"
+            class="inline-block bg-purple-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-purple-700"
+          >
+            Click Here</a
+          >
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-md shadow-purple-500 dark:bg-gray-800">
+          <div
+            class="w-14 h-14 flex items-center justify-center bg-orange-300 rounded-full mb-4"
+          >
+            <img src="UTS/icon 1.png" alt="" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-black">Viral Campaign</h3>
+          <p class="text-gray-500 text-sm mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
+            faucibus.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-purple-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-purple-700"
+          >
+            Click Here</a
+          >
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-md shadow-purple-500 dark:bg-gray-800">
+          <div
+            class="w-14 h-14 flex items-center justify-center bg-orange-300 rounded-full mb-4"
+          >
+            <img src="UTS/icon 2.png" alt="" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-black">Marketing</h3>
+          <p class="text-gray-500 text-sm mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
+            faucibus.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-purple-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-purple-700"
+          >
+            Click Here</a
+          >
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-md shadow-purple-500 dark:bg-gray-800">
+          <div
+            class="w-14 h-14 flex items-center justify-center bg-orange-300 rounded-full mb-4"
+          >
+            <img src="UTS/icon 3.png" alt="" class="w-8" />
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-black">Others</h3>
+          <p class="text-gray-500 text-sm mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit quisque
+            faucibus.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-purple-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-purple-700"
+          >
+            Click Here</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-orange-200 mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10 dark:bg-purple-600"
+    >
+      <div class="flex-1 flex justify-center">
+        <img
+          src="UTS/2.png"
+          alt="illustration"
+          class="w-[500px] md:w-[600px]"
+        />
+      </div>
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Simple
+          <span class="text-purple-600 dark:text-orange-500">Solutions!</span>
+        </h1>
+        <p class="text-lg text-gray-800 mb-8 leading-relaxed">
+          We understand that no two people are alike. That’s why we take the
+          time to truly understand your unique goals, challenges, and vision.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+        >
+          <button
+            class="bg-orange-500 text-white px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition"
+          >
+            Get Started
+          </button>
+          <button
+            class="border-2 border-purple-600 text-purple-600 px-6 py-3 rounded-xl hover:bg-purple-600 hover:text-white dark:bg-white dark:hover:text-black"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="mx-auto px-20 py-16 flex flex-col md:flex-row-reverse items-center gap-10"
+    >
+      <div class="flex-1 flex justify-center">
+        <img src="UTS/3.png" class="w-[500px] md:w-[600px]" />
+      </div>
+
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 dark:text-white">
+          Our <span class="text-purple-600">Agency</span>
+        </h1>
+        <p class="text-lg text-gray-800 mb-8 leading-relaxed dark:text-white">
+          We believe in the power of data. Our analytics-driven approach allows
+          us to make informed let's turn your data into actionable insights
+          adored solutions for you business.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+        >
+          <button
+            class="bg-orange-500 text-white px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition"
+          >
+            Red More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="py-20 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-extrabold mb-4 dark:text-white">
+            What <span class="text-orange-500">Clients</span> Say!
+          </h2>
+          <p
+            class="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed dark:text-white"
+          >
+            See How Our Digital Marketing Agency Helped Clients Achieve Their
+            Goals
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-[2rem] shadow-gray-200/50 border border-gray-100 flex flex-col h-full shadow-md hover:scale-105 transition dark:bg-gray-800"
+          >
+            <div class="flex-grow">
+              <h3 class="text-2xl font-bold text-orange-500 mb-1">
+                Johnny Suh
+              </h3>
+              <p
+                class="text-gray-400 font-semibold mb-4 uppercase tracking-wider text-sm"
+              >
+                Executive CEO
+              </p>
+              <p class="text-gray-600 leading-relaxed text-lg mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas metus urna, vehicula sed purus ut
+              </p>
+            </div>
+            <div class="flex space-x-1 mt-auto">
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 1.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 1.png" alt="star" class="w-6 h-6" />
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-[2rem] shadow-gray-200/50 border border-gray-100 flex flex-col h-full shadow-md hover:scale-105 transition dark:bg-gray-800"
+          >
+            <div class="flex-grow">
+              <h3 class="text-2xl font-bold text-orange-500 mb-1">
+                Nashley Juan
+              </h3>
+              <p
+                class="text-gray-400 font-semibold mb-4 uppercase tracking-wider text-sm"
+              >
+                Executive CEO
+              </p>
+              <p class="text-gray-600 leading-relaxed text-lg mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas metus urna, vehicula sed purus ut
+              </p>
+            </div>
+            <div class="flex space-x-1 mt-auto">
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 1.png" alt="star" class="w-6 h-6" />
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-[2rem] shadow-gray-200/50 border border-gray-100 flex flex-col h-full shadow-md hover:shadow-lg hover:scale-105 transition dark:bg-gray-800"
+          >
+            <div class="flex-grow">
+              <h3 class="text-2xl font-bold text-orange-500 mb-1">Mark Z.</h3>
+              <p
+                class="text-gray-400 font-semibold mb-4 uppercase tracking-wider text-sm"
+              >
+                Executive CEO
+              </p>
+              <p class="text-gray-600 leading-relaxed text-lg mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas metus urna, vehicula sed purus ut
+              </p>
+            </div>
+            <div class="flex space-x-1 mt-auto">
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+              <img src="UTS/Star 2.png" alt="star" class="w-6 h-6" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact"
+      class="bg-[#FFD98E] flex flex-col items-center dark:bg-purple-600"
+    >
+      <div
+        class="w-full max-w-5xl bg-[#FF983F] rounded-2xl p-2 md:p-5 flex flex-col md:flex-row items-center justify-between shadow-lg mb-20 dark:bg-gray-800"
+      >
+        <h2
+          class="text-white text-3xl md:text-4xl font-bold mb-6 md:mb-0 dark:text-orange-500"
+        >
+          Ready To Get Started?
+        </h2>
+        <button
+          class="border-2 border-white text-white px-6 py-3 rounded-xl hover:bg-purple-600 hover:text-white dark:border-orange-500 dark:text-white dark:hover:bg-orange-500"
+        >
+          Read More
+        </button>
+      </div>
+
+      <footer class="w-full max-w-6xl pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div class="flex items-center space-x-3">
+            <img src="UTS/Logo.png" alt="" class="w-1/4" />
+            <h1
+              class="text-[#7D3CFF] text-4xl font-bold tracking-tight dark:text-white"
+            >
+              BzMe
+            </h1>
+          </div>
+
+          <div>
+            <h3 class="text-[#333] text-xl font-bold mb-4">Company</h3>
+            <ul class="space-y-2 text-[#555] font-medium dark:text-white">
+              <li><a href="#" class="hover:text-[#7D3CFF]">About</a></li>
+              <li><a href="#" class="hover:text-[#7D3CFF]">Contact</a></li>
+              <li><a href="#" class="hover:text-[#7D3CFF]">Careers</a></li>
+              <li><a href="#" class="hover:text-[#7D3CFF]">Team</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-[#333] text-xl font-bold mb-4">Designs</h3>
+            <ul class="space-y-2 text-[#555] font-medium dark:text-white">
+              <li>
+                <a href="#" class="hover:text-[#7D3CFF]">Find a Designer</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#7D3CFF]"
+                  >Discover Inspiration</a
+                >
+              </li>
+              <li><a href="#" class="hover:text-[#7D3CFF]">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-[#333] text-xl font-bold mb-4">Support</h3>
+            <ul class="space-y-2 text-[#555] font-medium dark:text-white">
+              <li>
+                <a href="#" class="hover:text-[#7D3CFF]">Privacy Policy</a>
+              </li>
+              <li><a href="#" class="hover:text-[#7D3CFF]">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script>
+      function toggleDark() {
+        const html = document.documentElement;
+        const btn = document.getElementById("tema");
+        
+      html.classList.toggle("dark");
+      
+      if (html.classList.contains("dark")) {
+        btn.innerHTML = "☀️ Light";
+      } else { btn.innerHTML = "🌙 Dark";
+      }}
+
+      let btnSignup = document.getElementById("btnSignup");
+      let loginForm = document.getElementById("loginForm");
+      let closeLogin = document.getElementById("closeLogin");
+
+      btnSignup.addEventListener("click", function () {
+        loginForm.classList.remove("hidden");
+      });
+
+      closeLogin.addEventListener("click", function () {
+        loginForm.classList.add("hidden");
+      });
+
+      document.getElementById("btnLogin").addEventListener("click", function () {
+          let nama = document.getElementById("loginNama").value;
+          let email = document.getElementById("loginEmail").value;
+          let password = document.getElementById("loginPassword").value;
+          let error = document.getElementById("errorLogin");
+
+          error.innerText = "";
+
+          if (nama === "" || email === "" || password === "") {
+            error.innerText = "Semua field wajib diisi!";
+          } else if (!email.includes("@")) {
+            error.innerText = "Email tidak valid!";
+          } else if (password.length < 6) {
+            error.innerText = "Password minimal 6 karakter!";
+          } else {
+            alert("Login berhasil!");
+            loginForm.classList.add("hidden");
+          }
+        });
+    </script>
+  </body>
+</html>

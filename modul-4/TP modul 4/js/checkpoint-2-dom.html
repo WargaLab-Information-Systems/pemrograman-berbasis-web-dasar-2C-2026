@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Belajar JS - Checkpoint 2 (DOM)</title>
+</head>
+<body>
+  <h1 id="judul">Halo</h1>
+  <button id="tombol">Klik aku</button>
+
+  <p class="paragraf">Paragraf pertama</p>
+  <p class="paragraf">Paragraf kedua</p>
+  <p class="paragraf">Paragraf ketiga</p>
+
+  <script>
+    // Akses dan ubah teks
+    let judul = document.getElementById("judul");
+    judul.textContent = "Halo Dunia!";
+
+    // Ubah style
+    judul.style.color = "red";
+    judul.style.backgroundColor = "yellow";
+    judul.style.padding = "20px";
+    judul.style.borderRadius = "10px";
+
+    // querySelector - ambil 1 pertama
+    let p1 = document.querySelector(".paragraf");
+    p1.style.color = "blue";
+
+    // querySelectorAll - ambil semua, cek di Console
+    let semuaP = document.querySelectorAll(".paragraf");
+    console.log(semuaP);
+
+    // Loop semua paragraf (opsional)
+    semuaP.forEach(function(p) {
+        p.style.fontSize = "20px";
+    });
+  </script>
+</body>
+</html>

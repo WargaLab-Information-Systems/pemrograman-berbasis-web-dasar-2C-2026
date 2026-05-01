@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Belajar JS - Final (Form + Dark Mode)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      transition: all 0.3s;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+    #pesan {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    body.dark {
+      background-color: #222;
+      color: white;
+    }
+    body.dark input {
+      background-color: #333;
+      color: white;
+      border-color: #555;
+    }
+    body.dark button {
+      background-color: #444;
+      color: white;
+      border: 1px solid #666;
+    }
+  </style>
+</head>
+<body>
+  <button id="tombolTema">🌓 Toggle Dark Mode</button>
+
+  <h1>Form Pendaftaran</h1>
+
+  <form id="formDaftar">
+    <input type="text" id="nama" placeholder="Nama lengkap">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password (min 8 karakter)">
+    <input type="password" id="konfirmPass" placeholder="Konfirmasi password">
+    <button type="submit">Daftar</button>
+    <p id="pesan"></p>
+  </form>
+
+  <script>
+    // ========== DARK MODE ==========
+    document.getElementById("tombolTema").addEventListener("click", function() {
+        document.body.classList.toggle("dark");
+    });
+
+    // ========== VALIDASI FORM ==========
+    let form = document.getElementById("formDaftar");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();  // WAJIB: cegah halaman reload
+
+        // Ambil semua value
+        let nama = document.getElementById("nama").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let konfirmPass = document.getElementById("konfirmPass").value;
+        let pesan = document.getElementById("pesan");
+
+        // Validasi 1: Nama tidak boleh kosong
+        if (nama === "") {
+            pesan.textContent = "❌ Nama wajib diisi!";
+            pesan.style.color = "red";
+            return;
+        }
+
+        // Validasi 2: Email harus ada @
+        if (!email.includes("@")) {
+            pesan.textContent = "❌ Format email tidak valid!";
+            pesan.style.color = "red";
+            return;
+        }
+
+        // Validasi 3: Password minimal 8 karakter
+        if (password.length < 8) {
+            pesan.textContent = "❌ Password minimal 8 karakter!";
+            pesan.style.color = "red";
+            return;
+        }
+
+        // Validasi 4: Konfirmasi password harus sama
+        if (password !== konfirmPass) {
+            pesan.textContent = "❌ Password dan konfirmasi tidak sama!";
+            pesan.style.color = "red";
+            return;
+        }
+
+        // Semua valid
+        pesan.textContent = "✅ Pendaftaran berhasil! Selamat datang " + nama;
+        pesan.style.color = "green";
+    });
+  </script>
+</body>
+</html>
