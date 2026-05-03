@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg {
+            background-color: #5E7AC4;
+        }
+    </style>
+</head>
+
+<body class="bg-white min-h-screen">
+    <div class="flex flex-col md:flex-row min-h-screen w-full">
+
+        <div class="w-full md:w-1/2 bg p-8 md:p-12 flex flex-col justify-center items-center text-white text-center">
+            <div class="max-w-md">
+                <h1 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+                    Hello Prospective Students
+                </h1>
+                <div class="mb-8">
+                    <img src="aset/UTS/gambar_login page.png">
+                </div>
+                <p class="text-lg text-blue-50">
+                    Unlock your professional potential. Learn from industry leaders and stay ahead of the competition.
+                </p>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center bg-white">
+            <div class="max-w-sm mx-auto w-full">
+                <div class="mb-10 text-center">
+                    <h2 class="text-2xl font-extrabold text-gray-800 mb-2 uppercase tracking-widest">Login Page</h2>
+                    <p class="text-gray-500 text-sm">Masukkan Username dan Password Anda</p>
+                </div>
+
+                <form id="loginForm" class="space-y-4">
+                    <div>
+                        <input type="email" id="email" placeholder="Email Address"
+                            class="w-full px-6 py-4 bg-white border border-gray-200 rounded-2xl text-center placeholder:text-blue-400">
+                    </div>
+
+                    <div>
+                        <input type="password" id="password" placeholder="Password"
+                            class="w-full px-6 py-4 bg-white border border-gray-200 rounded-2xl text-center placeholder:text-blue-400">
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg text-white font-bold rounded-2xl">
+                        Login
+                    </button>
+
+                    <div class="relative flex items-center py-4">
+                        <div class="flex-grow border-t border-gray-200"></div>
+                        <span class="flex-shrink mx-4 text-gray-400 text-xs font-medium uppercase tracking-widest">Or
+                            Login With</span>
+                        <div class="flex-grow border-t border-gray-200"></div>
+                    </div>
+
+                    <button type="button" onclick="alert('Anda Telah Login')"
+                        class="w-full py-4 bg-white border border-gray-200 rounded-2xl flex items-center justify-center space-x-3 hover:bg-gray-50 transition-all">
+                        <img src="aset/UTS/google.png" class="w-5 h-5">
+                        <span class="text-gray-700 font-semibold text-sm">Sign in with Account Google</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('loginForm');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const emailVal = email.value.trim();
+            const passVal = password.value.trim();
+
+            if (emailVal === "") {
+                alert("Email jangan dikosongkan");
+            } else if (passVal === "") {
+                alert("Password jangan dikosongkan");
+            } else if (passVal.length < 8) {
+                alert("Password terlalu pendek, minimal 8 karakter!");
+            } else {
+                alert("Selamat! Login berhasil dilakukan.");
+                window.location.href = "satu.html";
+            }
+        });
+    </script>
+</body>
+
+</html>

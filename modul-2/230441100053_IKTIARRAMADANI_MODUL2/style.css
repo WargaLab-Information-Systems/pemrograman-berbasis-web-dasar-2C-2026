@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: #334155;
+    background-color: #f8fafc;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+#navbar {
+    background: #455977;
+    padding: 20px 0;
+}
+.logo {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+
+
+.header-utama {
+    text-align: center;
+    padding: 80px 0 40px;
+}
+
+.header-utama h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-utama p {
+    font-size: 18px;
+    color: #64748b;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+
+.galeri-foto {
+    padding: 40px 0;
+}
+
+.bingkai-foto {
+    float: left;
+    width: 23%;
+    margin: 1%;
+}
+
+.bingkai-foto img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #1e293b;
+    transition: transform 0.3s ease;
+}
+
+
+.fitur {
+    padding: 60px 0;
+}
+
+.kartu-fitur {
+    float: left;
+    width: 31%;
+    margin: 1%;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    min-height: 280px;
+}
+
+.kartu-fitur:hover {
+    border-color: #6366f1;
+    box-shadow: 0 5px 10px #1e293b;
+}
+
+.kartu-fitur h3 {
+    color: #1e293b;
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.kartu-fitur p {
+    font-size: 14px;
+    color: #64748b;
+    text-align: left;
+}
+
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
