@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BzMe Landing Page</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+
+  <header class="bg-white shadow-sm fixed top-0 left-0 w-full z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+
+
+      <div class="flex items-center gap-2">
+        <img src="Logo.png" class="w-10 h-10 object-contain">
+        <h1 class="text-[#8A38F5] font-bold text-2xl">BzMe</h1>
+      </div>
+
+
+      <nav class="hidden md:flex items-center gap-8 font-medium text-[15px]">
+        <a href="#home" class="text-[#8A38F5] hover:opacity-80">Home</a>
+        <a href="#about" class="text-[#8A38F5] hover:opacity-80">About</a>
+        <a href="#services" class="text-[#8A38F5] hover:opacity-80">Services</a>
+        <a href="#contact" class="text-[#8A38F5] hover:opacity-80">Contact</a>
+        <a href="#blog" class="text-[#8A38F5] hover:opacity-80">Blog</a>
+      </nav>
+      
+      <div class="flex items-center gap-3">
+        
+        <button onclick="toggleTheme()" id="themeBtn"
+        class="bg-gray-800 text-white px-4 py-2 rounded-md hover:opacity-80 transition">
+        🌙 Dark
+        </button>
+        
+        <a href="#" onclick="openModal()">
+          <button class="bg-orange-500 text-white px-5 py-2 rounded-md hover:bg-orange-600 transition">
+            Sign Up
+          </button>
+        </a>
+
+</div>
+
+<div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+
+  <div class="bg-white rounded-2xl w-full max-w-md p-8 relative">
+
+
+    <button onclick="closeModal()"
+      class="absolute top-3 right-4 text-2xl text-gray-500 hover:text-red-500">
+
+    </button>
+
+    <h2 class="text-3xl font-bold text-center text-[#8A38F5] mb-6">
+      Sign Up
+    </h2>
+
+    <form id="signupForm" class="space-y-4">
+
+      <div>
+        <input type="text" id="name" placeholder="Full Name"
+          class="w-full px-4 py-3 border rounded-xl outline-none">
+        <small id="nameError" class="text-red-500"></small>
+      </div>
+
+      <div>
+        <input type="text" id="email" placeholder="Email"
+          class="w-full px-4 py-3 border rounded-xl outline-none">
+        <small id="emailError" class="text-red-500"></small>
+      </div>
+
+      <div>
+        <input type="password" id="password" placeholder="Password"
+          class="w-full px-4 py-3 border rounded-xl outline-none">
+        <small id="passwordError" class="text-red-500"></small>
+      </div>
+
+      <div>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password"
+          class="w-full px-4 py-3 border rounded-xl outline-none">
+        <small id="confirmPasswordError" class="text-red-500"></small>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition">
+        Register
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+  </header>
+
+
+  <section id="home" class="bg-white pt-32 pb-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+
+
+      <div>
+        <h2 class="text-4xl font-bold leading-tight">
+          We Create <br>
+          <span class="text-purple-600">Solutions</span> For <br>
+          Your Business
+        </h2>
+
+        <p class="text-gray-500 mt-4">
+          We provide intelligent technology solutions to <br>
+          optimize efficiency and accelerate the growth of <br>
+          your business operations.
+        </p>
+
+        <a href="#services">
+          <button class="mt-6 bg-orange-500 text-white px-6 py-3 rounded">
+            Get Started
+          </button>
+        </a>
+      </div>
+
+
+      <div>
+        <img src="1.png" class="w-full">
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="services" class="py-16 text-center bg-gray-50">
+
+    <h3 class="text-2xl font-bold">
+      We Provide The Best <span class="text-purple-600">Services</span>
+    </h3>
+
+    <p class="text-gray-500 mt-2">
+      We deliver high-quality technology services specifically designed to enhance your <br>
+      business productivity and scalability in a sustainable way.
+    </p>
+
+    <div class="grid md:grid-cols-4 gap-6 mt-10 max-w-6xl mx-auto px-6">
+
+
+      <div class="bg-white p-6 rounded shadow relative">
+        <div class="absolute top-4 left-4 w-10 h-10 bg-[#ffd47e] rounded-full flex items-center justify-center">
+          <img src="icon 1.png" class="w-6 h-6">
+        </div>
+
+        <h4 class="font-bold mb-2 mt-12 text-left">Seo/Sem</h4>
+
+        <p class="text-sm text-gray-500 text-justify">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.
+        </p>
+
+        <div class="text-center">
+          <a href="#contact">
+            <button class="mt-3 bg-purple-500 text-white px-4 py-2 rounded text-sm">
+              Click here
+            </button>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="bg-white p-6 rounded shadow relative">
+        <div class="absolute top-4 left-4 w-10 h-10 bg-[#ffd47e] rounded-full flex items-center justify-center">
+          <img src="icon 1.png" class="w-6 h-6">
+        </div>
+
+        <h4 class="font-bold mb-2 mt-12 text-left">Viral Campaign</h4>
+
+        <p class="text-sm text-gray-500 text-justify">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.
+        </p>
+
+        <div class="text-center">
+          <a href="#contact">
+            <button class="mt-3 bg-purple-500 text-white px-4 py-2 rounded text-sm">
+              Click here
+            </button>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="bg-white p-6 rounded shadow relative">
+        <div class="absolute top-4 left-4 w-10 h-10 bg-[#ffd47e] rounded-full flex items-center justify-center">
+          <img src="icon 2.png" class="w-6 h-6">
+        </div>
+
+        <h4 class="font-bold mb-2 mt-12 text-left">Marketing</h4>
+
+        <p class="text-sm text-gray-500 text-justify">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.
+        </p>
+
+        <div class="text-center">
+          <a href="#contact">
+            <button class="mt-3 bg-purple-500 text-white px-4 py-2 rounded text-sm">
+              Click here
+            </button>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="bg-white p-6 rounded shadow relative">
+        <div class="absolute top-4 left-4 w-10 h-10 bg-[#ffd47e] rounded-full flex items-center justify-center">
+          <img src="icon 3.png" class="w-6 h-6">
+        </div>
+
+        <h4 class="font-bold mb-2 mt-12 text-left">Others</h4>
+
+        <p class="text-sm text-gray-500 text-justify">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.
+        </p>
+
+        <div class="text-center">
+          <a href="#contact">
+            <button class="mt-3 bg-purple-500 text-white px-4 py-2 rounded text-sm">
+              Click here
+            </button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="about" class="bg-yellow-300 py-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+
+      <img src="2.png" class="w-full">
+
+      <div>
+        <h3 class="text-2xl font-bold">
+          Simple <span class="text-purple-600">Solutions!</span>
+        </h3>
+
+        <p class="text-gray-700 mt-4">
+          We understand that no two <br>
+          are alike. That’s why we take the time to truly <br>
+          understand your unique goals, challenges, <br>
+          and vision.
+        </p>
+
+        <div class="mt-6 space-x-4">
+
+          <a href="#contact">
+            <button class="bg-orange-500 text-white px-6 py-2 rounded">
+              Get Started
+            </button>
+          </a>
+
+          <a href="#agency">
+            <button class="border border-purple-500 text-purple-500 px-6 py-2 rounded">
+              Read More
+            </button>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="agency" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+
+      <div>
+        <h3 class="text-2xl font-bold">
+          Our <span class="text-purple-600">Agency</span>
+        </h3>
+
+        <p class="text-gray-500 mt-4">
+          We believe in the power of data. Our <br>
+          analytics-driven approach allows <br>
+          us to make informed <br>
+          Let's turn your data into actionable <br>
+          insights adored Solutions for Your Business
+        </p>
+
+        <a href="#contact">
+          <button class="mt-6 bg-orange-500 text-white px-6 py-2 rounded">
+            Read More
+          </button>
+        </a>
+      </div>
+
+      <img src="3.png">
+
+    </div>
+  </section>
+
+
+  <section id="blog" class="bg-[#f4f4f4] pt-20 pb-0">
+
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="text-5xl font-bold">
+        What <span class="text-[#ff9335]">Clients</span> Say!
+      </h2>
+
+      <p class="text-gray-500 text-xl mt-4 leading-relaxed">
+        See How Our Digital Marketing Agency Helped Clients <br>
+        Achieve Their Goals
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-14">
+
+
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-left">
+          <h3 class="text-3xl font-bold text-[#ff9335]">Johnny Suh</h3>
+          <p class="text-gray-500 text-xl mt-1">Executive CEO</p>
+
+          <p class="text-gray-500 mt-5 leading-8 text-lg text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut
+          </p>
+
+          <div class="text-[#ffbf3b] text-2xl mt-4">★★★☆☆</div>
+        </div>
+
+
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-left">
+          <h3 class="text-3xl font-bold text-[#ff9335]">Nashley Juan</h3>
+          <p class="text-gray-500 text-xl mt-1">Executive CEO</p>
+
+          <p class="text-gray-500 mt-5 leading-8 text-lg text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut
+          </p>
+
+          <div class="text-[#ffbf3b] text-2xl mt-4">★★★★☆</div>
+        </div>
+
+
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-left">
+          <h3 class="text-3xl font-bold text-[#ff9335]">Mark Z.</h3>
+          <p class="text-gray-500 text-xl mt-1">Executive CEO</p>
+
+          <p class="text-gray-500 mt-5 leading-8 text-lg text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus urna, vehicula sed purus ut
+          </p>
+
+          <div class="text-[#ffbf3b] text-2xl mt-4">★★★★★</div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="contact" class="max-w-5xl mx-auto px-6 mt-24 relative z-10">
+      <div class="bg-[#ff9335] rounded-2xl px-12 py-7 flex justify-between items-center shadow-lg">
+
+        <h3 class="text-white text-4xl font-bold">
+          Ready To Get Started?
+        </h3>
+
+        <a href="mailto:your@email.com">
+          <button class="border-2 border-white text-white px-10 py-3 rounded-xl text-2xl font-semibold hover:bg-white hover:text-[#ff9335] transition">
+            Contact Us
+          </button>
+        </a>
+
+      </div>
+    </div>
+
+
+    <footer class="bg-[#f2d179] pt-24 pb-20 -mt-10">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-10 items-start">
+
+
+        <div class="flex items-center gap-4 mt-4">
+          <img src="Logo.png" class="w-14 h-14">
+          <h3 class="text-5xl font-bold text-[#8A38F5]">BzMe</h3>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-2xl mb-4">Company</h4>
+          <ul class="space-y-2 text-xl text-gray-700">
+            <li>About</li>
+            <li>Contact</li>
+            <li>Careers</li>
+            <li>Team</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-2xl mb-4">Designs</h4>
+          <ul class="space-y-2 text-xl text-gray-700">
+            <li>Find a Designer</li>
+            <li>Discover Inspiration</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-2xl mb-4">Support</h4>
+          <ul class="space-y-2 text-xl text-gray-700">
+            <li>Privacy Police</li>
+            <li>Terms</li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </section>
+
+<script>
+function openModal(){
+  document.getElementById("signupModal").classList.remove("hidden");
+  document.getElementById("signupModal").classList.add("flex");
+}
+
+function closeModal(){
+  document.getElementById("signupModal").classList.add("hidden");
+}
+
+document.getElementById("signupForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let valid = true;
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let password = document.getElementById("password").value.trim();
+  let confirmPassword = document.getElementById("confirmPassword").value.trim();
+
+  document.getElementById("nameError").innerText = "";
+  document.getElementById("emailError").innerText = "";
+  document.getElementById("passwordError").innerText = "";
+  document.getElementById("confirmPasswordError").innerText = "";
+
+  if(name == ""){
+    document.getElementById("nameError").innerText = "Nama wajib diisi";
+    valid = false;
+  }
+
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if(email == ""){
+    document.getElementById("emailError").innerText = "Email wajib diisi";
+    valid = false;
+  } else if(!email.match(emailPattern)){
+    document.getElementById("emailError").innerText = "Format email salah";
+    valid = false;
+  }
+
+  if(password == ""){
+    document.getElementById("passwordError").innerText = "Password wajib diisi";
+    valid = false;
+  } else if(password.length < 8){
+    document.getElementById("passwordError").innerText = "Password minimal 8 karakter";
+    valid = false;
+  }
+
+  if(confirmPassword == ""){
+    document.getElementById("confirmPasswordError").innerText = "Konfirmasi password wajib diisi";
+    valid = false;
+  } else if(confirmPassword != password){
+    document.getElementById("confirmPasswordError").innerText = "Password tidak sama";
+    valid = false;
+  }
+
+  if(valid){
+    alert("Sign Up berhasil!");
+    document.getElementById("signupForm").reset();
+    closeModal();
+  }
+});
+
+
+function toggleTheme(){
+
+let body = document.body;
+let btn = document.getElementById("themeBtn");
+
+let semua = document.querySelectorAll("section, header, footer, div");
+
+if(body.classList.contains("dark")){
+
+body.classList.remove("dark");
+body.classList.add("bg-gray-100");
+
+semua.forEach(item=>{
+item.classList.remove("bg-gray-900","text-white");
+});
+
+btn.innerHTML = "🌙 Dark";
+
+}else{
+
+body.classList.remove("bg-gray-100");
+body.classList.add("dark","bg-gray-900");
+
+semua.forEach(item=>{
+item.classList.add("bg-gray-900","text-white");
+});
+
+btn.innerHTML = "☀️ Light";
+
+}
+
+}
+
+document.querySelector("#contact a").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  let email = prompt("Masukkan email Anda:");
+  if (!email) {
+    alert("Email wajib diisi!");
+    return;
+  }
+
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.match(emailPattern)) {
+    alert("Format email tidak valid!");
+    return;
+  }
+
+  let message = prompt("Tulis pesan Anda:");
+  if (!message || message.trim() === "") {
+    alert("Pesan tidak boleh kosong!");
+    return;
+  }
+
+  let mailtoLink = `mailto:your@email.com?subject=Contact%20BzMe&body=${encodeURIComponent(message)}`;
+  window.location.href = mailtoLink;
+});
+
+</script>
+
+</body>
+</html>
