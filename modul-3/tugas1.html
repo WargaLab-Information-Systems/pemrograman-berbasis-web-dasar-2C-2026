@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <nav class="bg-purple-400 text-white p-4 fixed w-full top-0 shadow">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="font-bold text-lg">Maha Rizka</h1>
+      <div class="space-x-4">
+        <a href="#about" class="hover:underline">Tentang</a>
+        <a href="#portfolio" class="hover:underline">Portfolio</a>
+        <a href="#skills" class="hover:underline">Skill</a>
+        <a href="#certificate" class="hover:underline">Sertifikat</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="about" class="bg-[#e8e1d4] py-20 mt-16">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 items-center gap-10">
+
+        <div>
+          <h2 class="text-3xl font-serif text-gray-800 mb-4">Tentang Saya</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Saya adalah mahasiswa dari Fakultas Teknik program studi Sistem Informasi. 
+            Saya memiliki minat dalam bidang jurnalistik dan desain grafis, khususnya 
+            dalam pembuatan poster. Saya juga memiliki kemampuan komunikasi dalam 
+            beberapa bahasa asing.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="foto.jpeg" class="w-52 h-52 rounded-full object-cover border-4 border-gray-300 shadow-md">
+          <h2 class="text-xl font-bold mt-4">Maha Rizka</h2>
+          <p class="text-gray-600">Mahasiswa | Sistem Informasi</p>
+        </div>
+
+      </div>
+
+      <div class="mt-10 border-t border-gray-400"></div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">Portfolio</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 transition">
+        <img src="kel1.jpeg" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-bold">Artikel</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 transition">
+        <img src="design.jpeg" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-bold">Desain Poster</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 transition">
+        <img src="kel2.jpeg" class="w-full h-48 object-cover">
+        <div class="p-4 text-center">
+          <h3 class="font-bold">Artikel</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Kemampuan Bahasa</h2>
+
+    <div class="mb-4">
+      <p>Bahasa Inggris (70%)</p>
+      <div class="w-full bg-gray-300 rounded-full h-4">
+        <div class="bg-blue-600 h-4 rounded-full" style="width: 70%"></div>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <p>Bahasa Arab (80%)</p>
+      <div class="w-full bg-gray-300 rounded-full h-4">
+        <div class="bg-green-600 h-4 rounded-full" style="width: 80%"></div>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <p>Bahasa Indonesia (100%)</p>
+      <div class="w-full bg-gray-300 rounded-full h-4">
+        <div class="bg-red-600 h-4 rounded-full" style="width: 100%"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificate" class="bg-white p-6">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold mb-6 text-center">Sertifikat</h2>
+
+      <div class="grid md:grid-cols-3 gap-4">
+        <img src="sertif1.jpeg" class="rounded-lg shadow">
+        <img src="sertif2.jpeg" class="rounded-lg shadow">
+        <img src="sertif3.jpeg" class="rounded-lg shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-purple-400 text-white text-center p-4 mt-6">
+    <p>© 2026 Portofolio Maha</p>
+    <p>Instagram: iiamahaa</p>
+  </footer>
+
+</body>
+</html>
