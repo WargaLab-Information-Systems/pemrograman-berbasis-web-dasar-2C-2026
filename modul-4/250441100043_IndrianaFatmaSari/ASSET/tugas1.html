@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BzMe</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .text-purple {
+        color: #6c63ff;
+      }
+      .text-orange {
+        color: #ff7a00;
+      }
+
+      [data-bs-theme="dark"] .section-yellow {
+        background: #1a1a1a !important;
+      }
+      [data-bs-theme="dark"] .footer {
+        background: #1f1812 !important;
+      }
+      [data-bs-theme="dark"] .service-card,
+      [data-bs-theme="dark"] .testi-card {
+        background-color: #2b2b2b !important;
+        color: #fff;
+      }
+      [data-bs-theme="dark"] .bg-light {
+        background-color: #1a1a1a !important;
+      }
+      [data-bs-theme="dark"] .navbar {
+        background-color: #1f1812 !important;
+      }
+
+      .cta-box {
+        background: #ff8c32;
+      }
+      [data-bs-theme="dark"] .cta-box {
+        background: #2b2b2b !important;
+      }
+
+      .service-card {
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+      .testi-card {
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
+      .btn-purple {
+        background: #6c63ff;
+        color: white;
+      }
+
+      .btn-orange {
+        background: #ff7a00;
+        color: white;
+        border-radius: 8px;
+      }
+
+      .card-custom {
+        border-radius: 15px;
+        border: 1px solid #eee;
+        text-align: center;
+        padding: 20px;
+        transition: 0.3s;
+      }
+
+      .card-custom:hover {
+        transform: translateY(-5px);
+      }
+
+      .section-yellow {
+        background: #fdd38b;
+        padding: 80px 0;
+      }
+
+      .footer {
+        background: #fdd38b;
+        padding: 120px 0 40px;
+        position: relative;
+      }
+
+      .footer p {
+        margin: 0;
+        font-size: 14px;
+        color: #444;
+      }
+
+      .testi-card {
+        border-radius: 15px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .testi-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .testi-card:active {
+        transform: scale(0.98);
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-purple" href="#">
+          <img src="Logo.png" width="40" />BzMe
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-purple" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#Blog">Blog</a></li>
+          </ul>
+
+          <button id="themeToggle" class="btn btn-outline-secondary me-3">
+            Mode
+          </button>
+          <button
+            class="btn btn-orange px-4"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Home" class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="fw-bold">
+              We Create <br />
+              <span class="text-purple">Solutions</span> For <br />
+              Your Business
+            </h1>
+            <p class="text-muted mt-3">
+              We provide intelligent technology solutions to optimize efficiency
+              and accelerate growth of your business operations.
+            </p>
+            <a href="#" class="btn btn-orange mt-3">Get Started</a>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <img src="1.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Services" class="text-center py-5 bg-light">
+      <div class="container">
+        <h2 class="fw-bold">
+          We Provide The Best <span class="text-purple">Services</span>
+        </h2>
+        <p class="text-muted mb-5">
+          We deliver High-quality technology services specifically designed to
+          enhance your business productivity and scalability in a sustainable
+          way.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="service-card text-start">
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 15px;
+                "
+              >
+                <img src="icon 1.png" style="width: 25px" />
+              </div>
+              <h5 class="fw-bold">Seo/Sem</h5>
+              <p style="font-size: 14px; color: #666">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor
+                sit amet consectetur adipiscing elit quisque faucibus.
+              </p>
+              <button class="btn btn-purple mt-2">Click Here</button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="service-card text-start">
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: #fdd38b;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 15px;
+                "
+              >
+                <img src="icon 1.png" style="width: 25px" />
+              </div>
+              <h5 class="fw-bold">Viral Campaign</h5>
+              <p style="font-size: 14px; color: #666">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor
+                sit amet consectetur adipiscing elit quisque faucibus.
+              </p>
+              <button class="btn btn-purple mt-2">Click Here</button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="service-card text-start">
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: #fdd38b;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 15px;
+                "
+              >
+                <img src="icon 2.png" style="width: 25px" />
+              </div>
+              <h5 class="fw-bold">Marketing</h5>
+              <p style="font-size: 14px; color: #666">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor
+                sit amet consectetur adipiscing elit quisque faucibus.
+              </p>
+              <button class="btn btn-purple mt-2">Click Here</button>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="service-card text-start">
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: #fdd38b;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-bottom: 15px;
+                "
+              >
+                <img src="icon 3.png" style="width: 25px" />
+              </div>
+              <h5 class="fw-bold">Others</h5>
+              <p style="font-size: 14px; color: #666">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor
+                sit amet consectetur adipiscing elit quisque faucibus.
+              </p>
+              <button class="btn btn-purple mt-2">Click Here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-yellow">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center">
+            <img src="2.png" class="img-fluid" />
+          </div>
+
+          <div class="col-md-6">
+            <h3 class="fw-bold">
+              Simple <span class="text-purple">Solutions!</span>
+            </h3>
+            <p class="mt-3">
+              We understand that no two are alike. That's why we take the time
+              to truly understand your unique goals, challenges, and vision.
+            </p>
+
+            <a class="btn btn-orange me-2">Get Started</a>
+            <a class="btn btn-purple">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3 class="fw-bold">Our <span class="text-purple">Agency</span></h3>
+            <p class="mt-3">
+              We believe in the power of data. Our analytics-driven approach
+              allows us to make informed Let's turn your data into actionable
+              insights adored solution for your Business.
+            </p>
+            <a href="#" class="btn btn-orange">Read More</a>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <img src="3.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Blog" class="py-5 text-center">
+      <div class="container">
+        <h3 class="fw-bold">
+          What <span class="text-orange">Clients</span> Say!
+        </h3>
+        <p class="text-muted mb-4">
+          See How Our Digital Marketing Agency Helped Clients Achieve Their
+          Goals
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testi-card">
+              <h5 class="text-orange fw-bold">Johnny Suh</h5>
+              <small>Executive CEO</small>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas metus urna, vehicula sed purus ut
+              </p>
+              ⭐⭐⭐⭐☆
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testi-card">
+              <h5 class="text-orange fw-bold">Nashley Juan</h5>
+              <small>Executive CEO</small>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas metus urna, vehicula sed purus ut
+              </p>
+              ⭐⭐⭐⭐☆
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testi-card">
+              <h5 class="text-orange fw-bold">Mark Z.</h5>
+              <small>Executive CEO</small>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas metus urna, vehicula sed purus ut
+              </p>
+              ⭐⭐⭐⭐⭐
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="footer"
+      style="padding-top: 100px; background: #fdd38b"
+    >
+      <div class="container position-relative">
+        <div
+          class="row cta-box align-items p-4 px-5 shadow-sm"
+          style="
+            border-radius: 15px;
+            position: absolute;
+            top: -120px;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+          "
+        >
+          <div class="col-md-8">
+            <h4 class="text-white fw-bold mb-0">Ready To Get Started?</h4>
+          </div>
+
+          <div class="col-md-4 text-md-end mt-3 mt-md-0">
+            <a
+              href="#"
+              class="btn btn-light px-4 py-2"
+              style="color: #ff8c32; font-weight: bold"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-start mt-5 pt-5">
+          <div class="col-md-3 mb-3">
+            <h4 class="fw-bold text-purple">
+              <img src="Logo.png" width="40" /> BzMe
+            </h4>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <h6 class="fw-bold">Company</h6>
+            <ul class="list-unstyled">
+              <li>About</li>
+              <li>Contact</li>
+              <li>Careers</li>
+              <li>Team</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <h6 class="fw-bold">Designs</h6>
+            <ul class="list-unstyled">
+              <li>Find a Designer</li>
+              <li>Discover Inspiration</li>
+              <li>Pricing</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <h6 class="fw-bold">Support</h6>
+            <ul class="list-unstyled">
+              <li>Privacy Policy</li>
+              <li>Terms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const toggleBtn = document.getElementById("themeToggle");
+      toggleBtn.addEventListener("click", () => {
+        const html = document.documentElement;
+        const currentTheme = html.getAttribute("data-bs-theme");
+
+        if (currentTheme === "dark") {
+          html.setAttribute("data-bs-theme", "light");
+        } else {
+          html.setAttribute("data-bs-theme", "dark");
+        }
+      });
+    </script>
+
+    <div class="modal fade" id="signupModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content p-3">
+          <h5 class="fw-bold mb-3">Sign Up</h5>
+
+          <form id="signupForm">
+            <input
+              type="text"
+              id="suNama"
+              class="form-control mb-1"
+              placeholder="Nama"
+            />
+            <small id="errSuNama" class="text-danger"></small>
+
+            <input
+              type="email"
+              id="suEmail"
+              class="form-control mt-3 mb-1"
+              placeholder="Email"
+            />
+            <small id="errSuEmail" class="text-danger"></small>
+
+            <input
+              type="password"
+              id="suPass"
+              class="form-control mt-3 mb-1"
+              placeholder="Password"
+            />
+            <small id="errSuPass" class="text-danger"></small>
+
+            <input
+              type="password"
+              id="suConfirm"
+              class="form-control mt-3 mb-1"
+              placeholder="Confirm Password"
+            />
+            <small id="errSuConfirm" class="text-danger"></small>
+
+            <button type="submit" class="btn btn-orange w-100 mt-3">
+              Daftar
+            </button>
+
+            <p id="signupSuccess" class="text-success text-center mt-2"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let nama = document.getElementById("suNama").value.trim();
+          let email = document.getElementById("suEmail").value.trim();
+          let pass = document.getElementById("suPass").value.trim();
+          let confirm = document.getElementById("suConfirm").value.trim();
+
+          let valid = true;
+
+          document.getElementById("errSuNama").innerText = "";
+          document.getElementById("errSuEmail").innerText = "";
+          document.getElementById("errSuPass").innerText = "";
+          document.getElementById("errSuConfirm").innerText = "";
+          document.getElementById("signupSuccess").innerText = "";
+
+          if (nama === "") {
+            document.getElementById("errSuNama").innerText =
+              "Nama wajib diisi!";
+            valid = false;
+          }
+
+          if (email === "") {
+            document.getElementById("errSuEmail").innerText =
+              "Email wajib diisi!";
+            valid = false;
+          } else if (!email.includes("@")) {
+            document.getElementById("errSuEmail").innerText =
+              "Email tidak valid!";
+            valid = false;
+          }
+
+          if (pass.length < 6) {
+            document.getElementById("errSuPass").innerText =
+              "Password minimal 6 karakter!";
+            valid = false;
+          }
+
+          if (confirm !== pass) {
+            document.getElementById("errSuConfirm").innerText =
+              "Password tidak sama!";
+            valid = false;
+          }
+
+          if (valid) {
+            document.getElementById("signupSuccess").innerText =
+              "Akun berhasil dibuat!";
+            document.getElementById("signupForm").reset();
+          }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
