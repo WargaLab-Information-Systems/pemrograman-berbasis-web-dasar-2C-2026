@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Halaman_1></title>
+  </head>
+  <body>
+    <div class=" flex">
+      <div class="bg-blue-700 w-500 h-145">
+        <h1 class=" mx-25 py-25 pb-0 leading-tight text-5xl font-bold text-white">Hello prospective<br>Student</h1>
+        <img src="gambar_login page.png" class=" mx-15 w-130 h-60 ">
+        <h1 class="mx-25 text-white text-xl font-bold font-[poppins]">Unlock your profesional poyensial. Learn From<br>Industrial leads and stay ahed of the<br>competition</h1>
+      </div>
+      <div class="bg-slate-200">
+        <h1 class="text-3xl font-bold font-[poppins] mx-40 py-25 pb-0">LOGIN PAGE</h1>
+        <h1 class="text-xl mx-15">Masukkan Username dan Password Anda</h1>
+        
+        <form id="formku" class="mx-15 mt-7 text-blue-700 font-[poppins]">
+          Email Addres <input type="text" id="email" class="border-1 "><br><br>
+          Password <input type="text" id="password" class="border-1"><br><br>
+          <button type="submit" class="mx-45 bg-blue-700 w-20 text-white rounded-sm">Login</button>
+        </form>
+        <p id="error" style="color: red;"></p>
+    
+        <div class=" mx-15 flex items-center mt-3">
+          <div class="flex-grow border-t "></div>
+          <span class="px-2">Or Login with  </span>
+          <div class="flex flex-grow border-t"></div>
+        </div>
+        <div class="flex flex-col items-center mx-20 bg-white border-1 border-gray-400 w-90 h-10 mt-4">
+          <img src="google.svg" class="text-black"></img>
+          <span class="item-sm">Sign in with Account Google</span>
+        </div>
+      </div>
+    </div>
+    <script>
+  document.getElementById("formku").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let error = "";
+
+    if (email === "" || !email.includes("@")) {
+      error += "Email tidak valid!<br>";
+    }
+
+    if (password.length < 6) {
+      error += "Password minimal 6 karakter!<br>";
+    }
+
+    if (error !== "") {
+      document.getElementById("error").innerHTML = error;
+    } else {
+      document.getElementById("error").innerHTML = "";
+      if (confirm("Form berhasil dikirim! Klik OK untuk lanjut")) {
+        window.location.href = "halaman_2.html";
+      }
+    }
+  });
+</script>
+  </body>
+</html>
